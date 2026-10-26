@@ -1,0 +1,45 @@
+{
+  "notebook_version": "basic-v1",
+  "submitted_at": "2026-08-24T14:40:51.604011+00:00",
+  "methods_notes": "SmolVLAの主要機構をPyTorchで実装し、LIBERO-Spatialで10タスク・50エピソードを用いて学習した。",
+  "todos_completed": [
+    "TODO_1_time_embedding_outer_product",
+    "TODO_2_flow_matching_interpolation",
+    "TODO_3_target_velocity",
+    "TODO_4_euler_step"
+  ],
+  "execution_evidence": {
+    "vlm_hidden_dim": 960,
+    "transformer_hidden_dim": 256,
+    "trainable_params": 4454407,
+    "training_steps_completed": 300,
+    "training_final_loss": 0.591484785079956,
+    "eval_total_rollouts": 2,
+    "eval_success_count": 0,
+    "eval_overall_success_percent": 0.0,
+    "video_generated": true,
+    "video_count": 1
+  },
+  "model_fingerprint": {
+    "smolvla_ckpt.pt": "33d9185ff59ded644db54b19c867c0c2c0e72172acce8a19a1a3b84c775188b3"
+  },
+  "environment": {
+    "python": "3.13.15",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.35",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "gpu": "Tesla T4"
+  },
+  "hyperparams": {
+    "chunk_size": 8,
+    "action_dim": 7,
+    "transformer_hidden_dim": 256,
+    "num_transformer_layers": 4,
+    "train_steps": 300,
+    "batch_size": 1,
+    "learning_rate": 0.0003,
+    "warmup_steps": 30,
+    "seed": 42,
+    "num_flow_steps_eval": 10
+  }
+}
