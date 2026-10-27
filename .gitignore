@@ -8,3 +8,9 @@ smolvla_ckpt.pt
 assets/
 outputs/
 .build/
+.build_report_ros2.py
+ros2_workspace/build/
+ros2_workspace/install/
+ros2_workspace/log/
+ros2_workspace/*.log
+ros2_workspace/*.mp4
