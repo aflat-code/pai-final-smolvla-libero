@@ -1,0 +1,6 @@
+{
+  "video/PAI_final_block_push_comparison.mp4": "c4cc0308ce3dc4d8fca31177b82d7547d849ec5b9c303a349626afacd603edb6",
+  "models/block_push/before/model.safetensors": "071ade276bd4f0a77d2dec70c5158f8f811c66f901a79245aa01fdaba3772fc5",
+  "models/block_push/after/model.safetensors": "a66a16d65fc5b0fec0771c7e71aa8c3c6d07907c8d4fe270925b4a2848c4a841",
+  "results/block_push/demonstrations.json.gz": "e8540d952346dc60d114b9aece28a061beeb20e428b5e7536181f38a55960081"
+}

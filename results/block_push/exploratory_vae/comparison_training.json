@@ -1,0 +1,155 @@
+{
+  "before": {
+    "algorithm": "ACT",
+    "seed": 42,
+    "steps_this_stage": 200,
+    "resume_from": null,
+    "episodes": 10,
+    "frames": 2610,
+    "chunk_size": 16,
+    "n_action_steps": 16,
+    "batch_size": 16,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "kl_weight": 1.0,
+    "device": "cpu",
+    "num_parameters": 1070275,
+    "logs": [
+      {
+        "step": 0,
+        "loss": 7.631440162658691
+      },
+      {
+        "step": 50,
+        "loss": 0.2971230149269104
+      },
+      {
+        "step": 100,
+        "loss": 0.20962418615818024
+      },
+      {
+        "step": 150,
+        "loss": 0.160302072763443
+      }
+    ],
+    "final_loss": 0.11148631572723389,
+    "checkpoint_sha256": "8e99ef5a2e82dfa19f8324104ce95cc05befe36fd91e36f5df6102ce10292c4b"
+  },
+  "after": {
+    "algorithm": "ACT",
+    "seed": 42,
+    "steps_this_stage": 1200,
+    "resume_from": "/workspace/block_models/before",
+    "episodes": 30,
+    "frames": 7830,
+    "chunk_size": 16,
+    "n_action_steps": 16,
+    "batch_size": 16,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "kl_weight": 1.0,
+    "device": "cpu",
+    "num_parameters": 1070275,
+    "logs": [
+      {
+        "step": 0,
+        "loss": 0.1889164000749588
+      },
+      {
+        "step": 50,
+        "loss": 0.16138337552547455
+      },
+      {
+        "step": 100,
+        "loss": 0.18371815979480743
+      },
+      {
+        "step": 150,
+        "loss": 0.100986048579216
+      },
+      {
+        "step": 200,
+        "loss": 0.09329589456319809
+      },
+      {
+        "step": 250,
+        "loss": 0.09939998388290405
+      },
+      {
+        "step": 300,
+        "loss": 0.07899486273527145
+      },
+      {
+        "step": 350,
+        "loss": 0.09158651530742645
+      },
+      {
+        "step": 400,
+        "loss": 0.08848816156387329
+      },
+      {
+        "step": 450,
+        "loss": 0.0764164850115776
+      },
+      {
+        "step": 500,
+        "loss": 0.08396940678358078
+      },
+      {
+        "step": 550,
+        "loss": 0.06462214142084122
+      },
+      {
+        "step": 600,
+        "loss": 0.06772585213184357
+      },
+      {
+        "step": 650,
+        "loss": 0.06498581916093826
+      },
+      {
+        "step": 700,
+        "loss": 0.07050610333681107
+      },
+      {
+        "step": 750,
+        "loss": 0.0737140104174614
+      },
+      {
+        "step": 800,
+        "loss": 0.06912044435739517
+      },
+      {
+        "step": 850,
+        "loss": 0.08011074364185333
+      },
+      {
+        "step": 900,
+        "loss": 0.05294746905565262
+      },
+      {
+        "step": 950,
+        "loss": 0.053273022174835205
+      },
+      {
+        "step": 1000,
+        "loss": 0.05576341599225998
+      },
+      {
+        "step": 1050,
+        "loss": 0.060020528733730316
+      },
+      {
+        "step": 1100,
+        "loss": 0.059866294264793396
+      },
+      {
+        "step": 1150,
+        "loss": 0.04511353373527527
+      }
+    ],
+    "final_loss": 0.07341941446065903,
+    "checkpoint_sha256": "5af286d5a310f740ebe6014d1f5e6a973d2d2f7f7756fc0aebc37857d08028e7"
+  },
+  "teacher_failures": []
+}

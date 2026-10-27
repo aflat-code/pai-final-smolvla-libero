@@ -1,0 +1,13 @@
+services:
+  block-demo:
+    image: airobotbook/ros2-desktop-ai-robot-book-humble@sha256:b58ec74c019aacd9ce4818fa25fc5a9e0a1f22f8c9cd1f5260994bf15cd9eb63
+    platform: linux/amd64
+    shm_size: 2gb
+    environment:
+      DISPLAY: ':0'
+      LIBGL_ALWAYS_SOFTWARE: '1'
+    volumes:
+      - ./ros2_workspace:/workspace
+      - .:/submission
+    ports:
+      - '127.0.0.1:6080:80'

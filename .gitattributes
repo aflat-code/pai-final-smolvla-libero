@@ -1,0 +1,6 @@
+*.pdf binary
+*.mp4 binary
+*.safetensors binary
+*.gz binary
+*.jpg binary
+*.png binary

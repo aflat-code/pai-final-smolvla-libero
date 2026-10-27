@@ -1,91 +1,131 @@
-# ROS 2・Gazebo・Dockerによる再現可能なロボット制御とSmolVLA実験
+# 赤いブロックを青いゴールへ：ACT追加学習の比較
 
-Physical AI応用1講座の最終課題として、Vision-Language-Action (VLA) モデルの主要機構をPyTorchで実装し、LIBERO-plusシミュレーションで学習・評価したプロジェクトです。
+Physical AI 応用1 最終課題 / アカウント名 **Kamamoto**
 
-加えて、講義で扱ったROS 2、Gazebo、Dockerを用い、小規模でも確実に再現できる4点巡回タスクを実装しました。青い移動ロボットが緑の4目標点を順に巡回し、安全に停止します。
+CRANE+ V2が一辺4cmの赤いブロックを約9cm押し、青いゴールへ入れる課題です。
+ROS 2 Humble、Ignition Gazebo 6、Docker、LeRobot ACTを使います。
+実際に収集した教師データによる基準学習と、その重みからの追加学習を比較します。
 
-## ROS 2・Gazeboデモ
+## 最終比較の結果
 
-- ROS 2ノード: `motion_policy` が4点の軌道を生成
-- Gazebo: ロボット、目標点、固定カメラ、状態制御サービスを提供
-- Docker: 講義配布イメージを基盤に依存関係と実行環境を固定
-- 成功条件: 4目標点を2周連続で巡回し、最終点で停止
-- 実測結果: 8/8 waypointを通過、タスク完了
-- 提出動画: `video/PAI_final_ROS2_Gazebo_demo_1min.mp4`（61秒、通常速度）
+| 指標 | 追加学習前 | 追加学習後 |
+|---|---:|---:|
+| 成功数（固定5条件・各1回） | 3/5 | 3/5 |
+| ゴール中心までの平均距離 | 28.2 mm | 38.4 mm |
 
-ポリシーはROS 2サービスを通してGazeboの状態を更新し、各辺にsmoothstep補間を適用します。この構成はシミュレーション上での再現性を優先した最小実装です。
+今回、追加学習による改善は確認できませんでした。損失が下がっても接触動作の精度は改善せず、
+基準モデルの方が平均誤差は小さい結果でした。提出動画は成功・失敗を含む全10試行です。
 
-### Dockerでの実行
+## 提出物
+
+- [提出用動画](video/PAI_final_block_push_comparison.mp4)：5条件 × 追加学習前後。
+- [説明資料PDF](report/説明資料_PAI最終課題_Kamamoto.pdf)
+- [実測結果](results/block_push/)：試行別の座標・誤差・成功判定・学習条件・ハッシュ。
+- [学習済みACT](models/block_push/)：beforeとafterの重み・設定・学習記録。
+- [出典とライセンス](THIRD_PARTY_BLOCK.md)
+
+動画はGazeboの`/crane_camera` topicを直接記録した映像です。英語字幕を下部に置き、
+静止タイトル画面・繰り返し・スロー再生は使用しません。15fpsで生成されたシミュレーション映像を
+通常のシミュレーション時間で再生します。ホスト上の実行時間は負荷により長くなる場合があります。
+
+## AIと物理シミュレーション
+
+ACT入力は実測の5関節状態と、進行度・既知の初期ブロックx/y座標の計8次元です。
+画像は録画に使用し、今回の学習モデルは画像認識を行いません。
+出力は5軸の関節位置を16手まとめたAction Chunkです。20Hzで16手を順次実行して再推論します。
+
+各試行の開始前だけブロックをリセットします。試行中は関節指令だけを送り、
+ブロックの移動はGazeboの物理接触によって起きます。物体の固定・吸着・瞬間移動は使いません。
+
+成功条件は、終了時の中心がゴール中心`(0.290, -0.015)` mから3cm以内で、机上の高さを保つことです。
+5条件のうち1条件は標準の学習配置、4条件は収集時に指定しなかった開始座標です。
+各モデル・各条件を1回ずつ評価した小規模な比較です。
+
+## 学習条件
+
+| 項目 | 基準 | 追加学習後 |
+|---|---|---|
+| 実測教師データ | 標準配置10 episodes | 上記10 + 配置変化20 = 30 episodes |
+| 学習steps | 200 | 基準重みから追加1,200（累計1,400） |
+| optimizer | AdamW、lr 3e-4、weight decay 1e-4 | optimizerは再作成 |
+| batch / seed | 16 / 42 | 16 / 42 |
+| ACT | hidden 128、4 heads、encoder 2、decoder 1、VAE無効 | 同じ構成 |
+| chunk / n_action_steps | 16 / 16 | 16 / 16 |
+| dropout | 0.1（VAE無効のためKL項なし） | 同じ構成 |
+| 実行環境 | CPU / PyTorch 2.7.0 | CPU / PyTorch 2.7.0 |
+
+全ACTパラメータを新規学習し、外部事前学習重みは使用していません。
+追加20 episodesは開始x/yを各±8mmの範囲で変えています。
+関節はJointStateの配列位置ではなく名前で揃え、`joint1, joint2, joint4, joint3, gripper`の順にします。
+初期座標と基台回転が基準データでは定数なので、環境状態と基台回転には共通の非ゼロ正規化スケールを用います。
+正確な件数・パラメータ数・学習ログ・checkpoint SHA-256は`results/block_push/comparison_training.json`にあります。
+
+## Dockerでの再現
+
+Intel/AMD Linux、またはApple Silicon上のDocker Desktopのamd64エミュレーションを使用します。
+初回は講義イメージと依存パッケージのダウンロードが必要です。
 
 ```bash
-cd ros2_workspace
-docker compose build
-docker compose up
+docker compose -f compose.block.yaml up -d
+docker compose -f compose.block.yaml exec --user ubuntu block-demo bash /submission/tools/setup_block_environment.sh
 ```
 
-既に講義用コンテナが動作している場合は、ワークスペースをビルドして実行できます。
+ターミナル1でシミュレータを起動します。
 
 ```bash
+docker compose -f compose.block.yaml exec --user ubuntu block-demo bash
 source /opt/ros/humble/setup.bash
-cd /workspace
-colcon build --symlink-install --packages-select pai_gazebo_demo
-source install/setup.bash
-ros2 launch pai_gazebo_demo demo.launch.py
+source /home/ubuntu/airobot_ws/install/setup.bash
+source /workspace/install/setup.bash
+ros2 launch crane_act_demo crane_camera.launch.py
 ```
 
-## 概要
+ターミナル2で、提出モデルを評価します。
 
-- 入力: 前方カメラ画像、自然言語のタスク指示、ロボット状態
-- 出力: 7次元のロボット操作量を8ステップ分まとめたAction chunk
-- AI: SmolVLM2-500Mを凍結したVision-Language encoderとして使用
-- 学習部: Flow Matching TransformerをPyTorchで実装
-- 評価: LIBERO-Spatialのロボットタスク
-
-## 実装した要素
-
-1. sinusoidal time embedding
-2. ノイズと教師actionのFlow Matching補間
-3. 目標速度ベクトルの計算
-4. Euler法によるaction復元
-5. 画像・言語・ロボット状態の統合
-6. Action chunkingによる連続操作
-
-## 実験条件
-
-| 項目 | 値 |
-|---|---:|
-| 学習タスク | LIBERO-Spatial 10タスク |
-| 学習エピソード | 50（各タスク5） |
-| 学習ステップ | 300 |
-| batch size | 1 |
-| learning rate | 3e-4 |
-| warmup | 30 steps |
-| Action chunk | 8 |
-| Flow steps | 10 |
-| seed | 42 |
-
-## 結果
-
-- 最終学習loss: `0.591484785079956`
-- 自作モデル評価: 2 rollout中0成功
-- チェックポイントSHA-256: `33d9185ff59ded644db54b19c867c0c2c0e72172acce8a19a1a3b84c775188b3`
-
-成功率0%も含めて実験結果です。ベースラインの成功例と比較し、学習300ステップ、50エピソード、小規模Action headでは操作ポリシーの習得が不十分だったことを考察しています。
-
-## 実行方法
-
-Google ColabのGPUランタイムで `notebooks/smolvla_libero_final.ipynb` を上から順に実行します。実行には数GBのLIBERO-plusアセットが必要です。
-
-## ディレクトリ
-
-```text
-notebooks/   完了済み実装を含むColabノートブック
-results/     実行結果と設定値
-video/       提出用動画
-report/      提出用PDF
-ros2_workspace/ ROS 2パッケージ、Gazebo world、Docker設定
+```bash
+docker compose -f compose.block.yaml exec --user ubuntu block-demo bash
+source /opt/ros/humble/setup.bash
+source /home/ubuntu/airobot_ws/install/setup.bash
+source /workspace/install/setup.bash
+cd /home/ubuntu/pai_training
+./.pixi/envs/default/bin/python /workspace/training/block_experiment.py eval \
+  --model /submission/models/block_push/before --label before --video \
+  --root /workspace/reproduction_results
+./.pixi/envs/default/bin/python /workspace/training/block_experiment.py eval \
+  --model /submission/models/block_push/after --label after --video \
+  --root /workspace/reproduction_results
 ```
 
-## 注意とライセンス
+同じGazebo serverを重複起動しないでください。各試行の開始前にロボットをhomeへ戻し、
+ブロック座標をリセットします。乱数seedを揃えても、負荷や接触ソルバの差により数mm以上の差が生じ得ます。
+ブラウザGUIは`http://localhost:6080`で利用できますが、動画はGUI画面の録画ではありません。
 
-本リポジトリは教育目的の実験記録です。Hugging Face、LeRobot、SmolVLM2、LIBERO/LIBERO-plusなどの第三者コード・モデル・データには、それぞれの配布元ライセンスが適用されます。学習済み重みや大容量アセットは本リポジトリに含めていません。
+## データ収集と再学習
+
+同じROS環境を読み込んだターミナルで収集します。出力先は既存の提出結果と分けます。
+
+```bash
+python3 /workspace/training/block_experiment.py collect \
+  --episodes 30 --root /workspace/new_demonstrations
+cd /home/ubuntu/pai_training
+./.pixi/envs/default/bin/python /workspace/training/train_block_act.py \
+  --data /workspace/new_demonstrations --out /workspace/new_models
+```
+
+元の実測教師データは`results/block_push/demonstrations.json.gz`にも保存しています。
+この圧縮ファイルは`{teacher_00: {...}, ...}`形式です。再学習する場合は各値を同名のJSONへ展開します。
+教師軌道のコードは`block_expert.py`と`block_experiment.py`の`teacher()`、
+学習コードは`train_block_act.py`、動画編集コードは`assemble_block_video.py`です。
+
+## 解釈の範囲
+
+追加学習ではエピソード数・配置の多様性・学習量を同時に変えています。
+要因別の効果や統計的な優越性は主張しません。狭い卓上配置での状態ベースの軌道模倣であり、
+未知物体や大きな配置変更、実機への転移は未検証です。PDFでは失敗も含めて実測結果を示します。
+初回のVAE有効モデルでは基準4/5、追加後1/5でした。開始姿勢の差も見つかったため、
+最終比較ではVAEを無効にし、開始前にhome姿勢へ到達したことを確認します。
+探索中に同じ5配置を使用しており、最終結果は独立した未使用テストの成績ではありません。
+探索結果は`results/block_push/exploratory_vae/`に保存しています。
+
+旧LIBERO・腕振り・巡回の実験は[旧記録](README_legacy.md)として残しています。
+今回の提出対象はこのページで案内したブロック押し課題です。

@@ -1,0 +1,48 @@
+{
+  "algorithm": "ACT",
+  "seed": 42,
+  "steps_this_stage": 200,
+  "resume_from": null,
+  "episodes": 10,
+  "frames": 2610,
+  "chunk_size": 16,
+  "n_action_steps": 16,
+  "batch_size": 16,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "kl_weight": 1.0,
+  "device": "cpu",
+  "num_parameters": 667939,
+  "logs": [
+    {
+      "step": 0,
+      "loss": 0.7242096066474915
+    },
+    {
+      "step": 50,
+      "loss": 0.21087786555290222
+    },
+    {
+      "step": 100,
+      "loss": 0.1326282024383545
+    },
+    {
+      "step": 150,
+      "loss": 0.11597447097301483
+    }
+  ],
+  "final_loss": 0.11403139680624008,
+  "use_vae": false,
+  "initial_rotation_std": 0.05,
+  "environment_mean": [
+    0.5,
+    0.2,
+    -0.015
+  ],
+  "environment_std": [
+    0.3,
+    0.02,
+    0.02
+  ],
+  "checkpoint_sha256": "071ade276bd4f0a77d2dec70c5158f8f811c66f901a79245aa01fdaba3772fc5"
+}

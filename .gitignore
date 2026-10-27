@@ -14,3 +14,9 @@ ros2_workspace/install/
 ros2_workspace/log/
 ros2_workspace/*.log
 ros2_workspace/*.mp4
+ros2_workspace/block_results/
+ros2_workspace/block_models/
+ros2_workspace/ablation_vae/
+ros2_workspace/video/
+!models/block_push/before/model.safetensors
+!models/block_push/after/model.safetensors
