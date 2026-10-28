@@ -17,6 +17,11 @@ ros2_workspace/*.mp4
 ros2_workspace/block_results/
 ros2_workspace/block_models/
 ros2_workspace/ablation_vae/
+ros2_workspace/grasp_results/
+ros2_workspace/strategy_results/
+ros2_workspace/strategy_models/
+!experiments/submission2/models/before/model.safetensors
+!experiments/submission2/models/after/model.safetensors
 ros2_workspace/video/
 !models/block_push/before/model.safetensors
 !models/block_push/after/model.safetensors

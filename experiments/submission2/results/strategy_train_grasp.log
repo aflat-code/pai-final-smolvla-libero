@@ -1,0 +1,58 @@
+Map:   0%|          | 0/490 [00:00<?, ? examples/s]Map:  41%|████      | 202/490 [00:00<00:00, 1957.60 examples/s]Map: 100%|██████████| 490/490 [00:00<00:00, 2421.62 examples/s]
+Creating parquet from Arrow format:   0%|          | 0/1 [00:00<?, ?ba/s]Creating parquet from Arrow format: 100%|██████████| 1/1 [00:00<00:00, 92.78ba/s]
+Map:   0%|          | 0/489 [00:00<?, ? examples/s]Map:  76%|███████▋  | 374/489 [00:00<00:00, 3707.90 examples/s]Map: 100%|██████████| 489/489 [00:00<00:00, 3561.53 examples/s]
+Creating parquet from Arrow format:   0%|          | 0/1 [00:00<?, ?ba/s]Creating parquet from Arrow format: 100%|██████████| 1/1 [00:00<00:00, 767.20ba/s]
+Map:   0%|          | 0/490 [00:00<?, ? examples/s]Map:  74%|███████▍  | 365/490 [00:00<00:00, 3626.47 examples/s]Map: 100%|██████████| 490/490 [00:00<00:00, 3483.69 examples/s]
+Creating parquet from Arrow format:   0%|          | 0/1 [00:00<?, ?ba/s]Creating parquet from Arrow format: 100%|██████████| 1/1 [00:00<00:00, 830.23ba/s]
+Map:   0%|          | 0/489 [00:00<?, ? examples/s]Map:  76%|███████▌  | 370/489 [00:00<00:00, 3678.65 examples/s]Map: 100%|██████████| 489/489 [00:00<00:00, 3498.94 examples/s]
+Creating parquet from Arrow format:   0%|          | 0/1 [00:00<?, ?ba/s]Creating parquet from Arrow format: 100%|██████████| 1/1 [00:00<00:00, 944.66ba/s]
+Map:   0%|          | 0/490 [00:00<?, ? examples/s]Map:  75%|███████▍  | 367/490 [00:00<00:00, 3642.61 examples/s]Map: 100%|██████████| 490/490 [00:00<00:00, 3488.31 examples/s]
+Creating parquet from Arrow format:   0%|          | 0/1 [00:00<?, ?ba/s]Creating parquet from Arrow format: 100%|██████████| 1/1 [00:00<00:00, 771.44ba/s]
+Map:   0%|          | 0/489 [00:00<?, ? examples/s]Map:  75%|███████▌  | 368/489 [00:00<00:00, 3660.25 examples/s]Map: 100%|██████████| 489/489 [00:00<00:00, 3500.03 examples/s]
+Creating parquet from Arrow format:   0%|          | 0/1 [00:00<?, ?ba/s]Creating parquet from Arrow format: 100%|██████████| 1/1 [00:00<00:00, 710.42ba/s]
+Map:   0%|          | 0/489 [00:00<?, ? examples/s]Map:  75%|███████▌  | 369/489 [00:00<00:00, 3651.91 examples/s]Map: 100%|██████████| 489/489 [00:00<00:00, 3507.85 examples/s]
+Creating parquet from Arrow format:   0%|          | 0/1 [00:00<?, ?ba/s]Creating parquet from Arrow format: 100%|██████████| 1/1 [00:00<00:00, 759.70ba/s]
+Map:   0%|          | 0/489 [00:00<?, ? examples/s]Map:  74%|███████▎  | 360/489 [00:00<00:00, 3576.61 examples/s]Map: 100%|██████████| 489/489 [00:00<00:00, 3456.80 examples/s]
+Creating parquet from Arrow format:   0%|          | 0/1 [00:00<?, ?ba/s]Creating parquet from Arrow format: 100%|██████████| 1/1 [00:00<00:00, 464.02ba/s]
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 490 examples [00:00, 2818.43 examples/s]Generating train split: 3915 examples [00:00, 21120.47 examples/s]
+Loading weights from local directory
+after step 0/2000 loss 0.52665
+after step 50/2000 loss 0.22621
+after step 100/2000 loss 0.15157
+after step 150/2000 loss 0.10736
+after step 200/2000 loss 0.14724
+after step 250/2000 loss 0.08522
+after step 300/2000 loss 0.14015
+after step 350/2000 loss 0.10590
+after step 400/2000 loss 0.09454
+after step 450/2000 loss 0.07415
+after step 500/2000 loss 0.07449
+after step 550/2000 loss 0.07451
+after step 600/2000 loss 0.08639
+after step 650/2000 loss 0.08678
+after step 700/2000 loss 0.07392
+after step 750/2000 loss 0.07026
+after step 800/2000 loss 0.08007
+after step 850/2000 loss 0.06531
+after step 900/2000 loss 0.09806
+after step 950/2000 loss 0.08760
+after step 1000/2000 loss 0.07178
+after step 1050/2000 loss 0.08883
+after step 1100/2000 loss 0.06284
+after step 1150/2000 loss 0.09964
+after step 1200/2000 loss 0.10377
+after step 1250/2000 loss 0.05880
+after step 1300/2000 loss 0.04018
+after step 1350/2000 loss 0.04639
+after step 1400/2000 loss 0.07551
+after step 1450/2000 loss 0.07241
+after step 1500/2000 loss 0.08162
+after step 1550/2000 loss 0.04386
+after step 1600/2000 loss 0.09975
+after step 1650/2000 loss 0.05777
+after step 1700/2000 loss 0.04472
+after step 1750/2000 loss 0.08733
+after step 1800/2000 loss 0.06933
+after step 1850/2000 loss 0.06670
+after step 1900/2000 loss 0.04491
+after step 1950/2000 loss 0.06305

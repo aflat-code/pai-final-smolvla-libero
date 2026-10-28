@@ -1,0 +1,16 @@
+{
+  "push": {
+    "trials": 3,
+    "lifted_over_30mm": 0,
+    "goal_within_30mm": 3,
+    "mean_max_lift_mm": 0.006334454801804057,
+    "mean_goal_error_mm": 7.66155973572788
+  },
+  "grasp": {
+    "trials": 3,
+    "lifted_over_30mm": 3,
+    "goal_within_30mm": 3,
+    "mean_max_lift_mm": 65.01270703404546,
+    "mean_goal_error_mm": 10.92859699062211
+  }
+}

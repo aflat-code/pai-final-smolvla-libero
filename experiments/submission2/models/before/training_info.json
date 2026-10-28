@@ -1,0 +1,77 @@
+{
+  "algorithm": "ACT",
+  "seed": 42,
+  "steps_this_stage": 500,
+  "resume_from": null,
+  "episodes": 8,
+  "frames": 2351,
+  "chunk_size": 16,
+  "n_action_steps": 16,
+  "batch_size": 16,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "kl_weight": 1.0,
+  "device": "cpu",
+  "num_parameters": 667939,
+  "logs": [
+    {
+      "step": 0,
+      "loss": 0.6728883981704712
+    },
+    {
+      "step": 50,
+      "loss": 0.14781317114830017
+    },
+    {
+      "step": 100,
+      "loss": 0.13820579648017883
+    },
+    {
+      "step": 150,
+      "loss": 0.10745741426944733
+    },
+    {
+      "step": 200,
+      "loss": 0.11052970588207245
+    },
+    {
+      "step": 250,
+      "loss": 0.07498844712972641
+    },
+    {
+      "step": 300,
+      "loss": 0.09053609520196915
+    },
+    {
+      "step": 350,
+      "loss": 0.08669562637805939
+    },
+    {
+      "step": 400,
+      "loss": 0.09370647370815277
+    },
+    {
+      "step": 450,
+      "loss": 0.0731293112039566
+    }
+  ],
+  "final_loss": 0.14369449019432068,
+  "use_vae": false,
+  "initial_rotation_std": 0.35,
+  "environment_mean": [
+    0.5,
+    0.13,
+    0.02
+  ],
+  "environment_std": [
+    0.3,
+    0.02,
+    0.02
+  ],
+  "std_overrides": {
+    "0": 0.35,
+    "4": 0.5
+  },
+  "checkpoint_sha256": "9f1ee47eae01fea841835e3aa3a80462cc3d0a2acddcd42e11ca73a9f497f92f",
+  "training_strategy": "push"
+}

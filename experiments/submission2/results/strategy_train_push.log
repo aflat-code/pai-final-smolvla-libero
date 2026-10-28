@@ -1,0 +1,27 @@
+Map:   0%|          | 0/294 [00:00<?, ? examples/s]Map: 100%|██████████| 294/294 [00:00<00:00, 2937.98 examples/s]Map: 100%|██████████| 294/294 [00:00<00:00, 2728.96 examples/s]
+Creating parquet from Arrow format:   0%|          | 0/1 [00:00<?, ?ba/s]Creating parquet from Arrow format: 100%|██████████| 1/1 [00:00<00:00, 83.48ba/s]
+Map:   0%|          | 0/294 [00:00<?, ? examples/s]Map:  94%|█████████▍| 277/294 [00:00<00:00, 2248.09 examples/s]Map: 100%|██████████| 294/294 [00:00<00:00, 2220.80 examples/s]
+Creating parquet from Arrow format:   0%|          | 0/1 [00:00<?, ?ba/s]Creating parquet from Arrow format: 100%|██████████| 1/1 [00:00<00:00, 958.26ba/s]
+Map:   0%|          | 0/294 [00:00<?, ? examples/s]Map: 100%|██████████| 294/294 [00:00<00:00, 3444.67 examples/s]
+Creating parquet from Arrow format:   0%|          | 0/1 [00:00<?, ?ba/s]Creating parquet from Arrow format: 100%|██████████| 1/1 [00:00<00:00, 938.95ba/s]
+Map:   0%|          | 0/294 [00:00<?, ? examples/s]Map: 100%|██████████| 294/294 [00:00<00:00, 3369.08 examples/s]
+Creating parquet from Arrow format:   0%|          | 0/1 [00:00<?, ?ba/s]Creating parquet from Arrow format: 100%|██████████| 1/1 [00:00<00:00, 1113.14ba/s]
+Map:   0%|          | 0/294 [00:00<?, ? examples/s]Map: 100%|██████████| 294/294 [00:00<00:00, 3410.26 examples/s]
+Creating parquet from Arrow format:   0%|          | 0/1 [00:00<?, ?ba/s]Creating parquet from Arrow format: 100%|██████████| 1/1 [00:00<00:00, 937.69ba/s]
+Map:   0%|          | 0/294 [00:00<?, ? examples/s]Map: 100%|██████████| 294/294 [00:00<00:00, 3354.71 examples/s]
+Creating parquet from Arrow format:   0%|          | 0/1 [00:00<?, ?ba/s]Creating parquet from Arrow format: 100%|██████████| 1/1 [00:00<00:00, 1055.97ba/s]
+Map:   0%|          | 0/293 [00:00<?, ? examples/s]Map: 100%|██████████| 293/293 [00:00<00:00, 3404.96 examples/s]
+Creating parquet from Arrow format:   0%|          | 0/1 [00:00<?, ?ba/s]Creating parquet from Arrow format: 100%|██████████| 1/1 [00:00<00:00, 721.91ba/s]
+Map:   0%|          | 0/294 [00:00<?, ? examples/s]Map: 100%|██████████| 294/294 [00:00<00:00, 3270.04 examples/s]
+Creating parquet from Arrow format:   0%|          | 0/1 [00:00<?, ?ba/s]Creating parquet from Arrow format: 100%|██████████| 1/1 [00:00<00:00, 970.23ba/s]
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 2351 examples [00:00, 22859.12 examples/s]Generating train split: 2351 examples [00:00, 22807.89 examples/s]
+before step 0/500 loss 0.67289
+before step 50/500 loss 0.14781
+before step 100/500 loss 0.13821
+before step 150/500 loss 0.10746
+before step 200/500 loss 0.11053
+before step 250/500 loss 0.07499
+before step 300/500 loss 0.09054
+before step 350/500 loss 0.08670
+before step 400/500 loss 0.09371
+before step 450/500 loss 0.07313

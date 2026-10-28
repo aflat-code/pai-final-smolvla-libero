@@ -20,7 +20,7 @@ FEATURES = {
 }
 
 
-def make_dataset(paths, root, repo_id):
+def make_dataset(paths, root, repo_id, task_name='push_red_block_into_blue_goal'):
     if root.exists():
         return LeRobotDataset(repo_id=repo_id,root=root,delta_timestamps={
             'observation.state':[0.], 'observation.environment_state':[0.], 'action':[i/20 for i in range(16)]})
@@ -30,13 +30,13 @@ def make_dataset(paths, root, repo_id):
         for row in item['samples']:
             dataset.add_frame({'observation.state':np.asarray(row['state'],dtype=np.float32),
                                'observation.environment_state':np.asarray(row['environment_state'],dtype=np.float32),
-                               'action':np.asarray(row['action'],dtype=np.float32),'task':'push_red_block_into_blue_goal'})
+                               'action':np.asarray(row['action'],dtype=np.float32),'task':task_name})
         dataset.save_episode()
     return LeRobotDataset(repo_id=repo_id,root=root,delta_timestamps={
         'observation.state':[0.], 'observation.environment_state':[0.], 'action':[i/20 for i in range(16)]})
 
 
-def train(dataset, output, steps, resume=None):
+def train(dataset, output, steps, resume=None, context_center=(.20,-.015), std_overrides=None):
     torch.manual_seed(42)
     np.random.seed(42)
     random.seed(42)
@@ -46,12 +46,14 @@ def train(dataset, output, steps, resume=None):
     else:
         # Initial x/y are constant in the baseline set. Use an explicit shared
         # scale so that varied continuation inputs never divide by zero std.
-        dataset.meta.stats['observation.environment_state']['mean']=torch.tensor([.5,.20,-.015])
+        dataset.meta.stats['observation.environment_state']['mean']=torch.tensor([.5,*context_center])
         dataset.meta.stats['observation.environment_state']['std']=torch.tensor([.3,.02,.02])
         # Base rotation is also constant in nominal demonstrations. Give it a
         # shared nonzero scale for both measured state and target action.
         for key in ['observation.state','action']:
             dataset.meta.stats[key]['std'][0]=.05
+            for index,value in (std_overrides or {}).items():
+                dataset.meta.stats[key]['std'][index]=value
         policy=ACTPolicy(ACTConfig(
             input_features={k:v for k,v in features.items() if v.type is not FeatureType.ACTION},
             output_features={k:v for k,v in features.items() if v.type is FeatureType.ACTION},
@@ -79,8 +81,9 @@ def train(dataset, output, steps, resume=None):
           'episodes':dataset.num_episodes,'frames':len(dataset),'chunk_size':16,'n_action_steps':16,
           'batch_size':16,'learning_rate':3e-4,'weight_decay':1e-4,'kl_weight':1.,'device':'cpu',
           'num_parameters':sum(p.numel() for p in policy.parameters()),'logs':logs,'final_loss':loss.item(),
-          'use_vae':policy.config.use_vae,'initial_rotation_std':.05,
-          'environment_mean':[.5,.20,-.015],'environment_std':[.3,.02,.02]}
+          'use_vae':policy.config.use_vae,'initial_rotation_std':(std_overrides or {}).get(0,.05),
+          'environment_mean':[.5,*context_center],'environment_std':[.3,.02,.02],
+          'std_overrides':std_overrides or {0:.05}}
     info['checkpoint_sha256']=hashlib.sha256((output/'model.safetensors').read_bytes()).hexdigest()
     (output/'training_info.json').write_text(json.dumps(info,indent=2))
     return info
