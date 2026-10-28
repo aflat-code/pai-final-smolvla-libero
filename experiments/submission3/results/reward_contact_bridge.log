@@ -1,0 +1,1 @@
+[INFO] [1793203024.179514094] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/default/model/red_block/link/block_link/sensor/block_contact_sensor/contact (ignition.msgs.Contacts) -> /world/default/model/red_block/link/block_link/sensor/block_contact_sensor/contact (ros_gz_interfaces/msg/Contacts)] (Lazy 0)

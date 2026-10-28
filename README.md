@@ -1,3 +1,15 @@
+# このブランチは提出候補③：報酬による運び方の探索
+
+提出候補③の説明・動画・PDF・方策・全探索記録は
+[experiments/submission3](experiments/submission3/) にまとめています。
+今回は把持のお手本を追加するのではなく、机上の滑りを減点する報酬によって
+共通動作骨格の2つの連続パラメータをCEMで探索します。
+
+提出①は `main` / `submission-1-block-push`、提出②は
+`experiment2-grasp-transfer` に保存済みです。以下は提出①の記録です。
+
+---
+
 # 赤いブロックを青いゴールへ：ACT追加学習の比較
 
 Physical AI 応用1 最終課題 / アカウント名 **Kamamoto**

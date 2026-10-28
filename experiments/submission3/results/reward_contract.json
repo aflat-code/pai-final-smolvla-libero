@@ -1,0 +1,25 @@
+{
+  "reward": {
+    "goal_sigma_m": 0.03,
+    "goal_scale": 20.0,
+    "goal_bonus": 8.0,
+    "slide_cost_per_m": 300.0,
+    "effort_scale": 0.5,
+    "terminal_height_cost_per_m": 100.0
+  },
+  "parameters_bounds": [
+    [
+      -0.52,
+      0.6
+    ],
+    [
+      0.0,
+      0.05
+    ]
+  ],
+  "seed": 20261029,
+  "generations": 3,
+  "population": 12,
+  "selection": "reward only; no height threshold, no grasp label, no manually injected winning policy",
+  "no_motion_reference_reward": 0.18558027774129435
+}

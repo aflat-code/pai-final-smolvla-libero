@@ -4,3 +4,4 @@
 *.gz binary
 *.jpg binary
 *.png binary
+*.log -whitespace

@@ -1,0 +1,26 @@
+{
+  "kind": "continuous_trajectory_policy",
+  "parameters": [
+    -0.52,
+    0.0
+  ],
+  "parameter_names": [
+    "finger_closure_rad",
+    "transit_clearance_m"
+  ],
+  "fixed_contact_z_m": 0.14,
+  "duration_wall_s": 25.0,
+  "seed": 20261029,
+  "reward": {
+    "goal_sigma_m": 0.03,
+    "goal_scale": 20.0,
+    "goal_bonus": 8.0,
+    "slide_cost_per_m": 300.0,
+    "effort_scale": 0.5,
+    "terminal_height_cost_per_m": 100.0
+  },
+  "human_prior": "fixed IK phase skeleton, block alignment, transfer yaw and continuous reachability tilt",
+  "neural_network": false,
+  "demonstrations_used": false,
+  "description": "Initial open-finger zero-clearance policy; not an ACT checkpoint"
+}

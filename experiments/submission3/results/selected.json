@@ -1,0 +1,44 @@
+{
+  "best_search_result": {
+    "label": "search_g02_08",
+    "parameters": [
+      0.523453607170416,
+      0.017692133092694066
+    ],
+    "reward": 17.34265659029105,
+    "reward_terms": {
+      "goal": 19.003166725561698,
+      "goal_bonus": 8.0,
+      "slide_penalty": -9.174780612320038,
+      "effort_penalty": -0.48572797562083736,
+      "terminal_height_penalty": -1.5473297754198256e-06
+    },
+    "goal_error_m": 0.009593119894810749,
+    "slide_m": 0.030582602041066796,
+    "air_xy_m": 0.10179097788932177,
+    "max_lift_m": 0.014242104499003538,
+    "goal_reached": true,
+    "lifted_3cm": false,
+    "final": [
+      0.10820428451488931,
+      -0.07881024933088189,
+      1.0299999845267023
+    ],
+    "samples": 491,
+    "contact_sensor_messages": 166206,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 2,
+    "candidate": 8
+  },
+  "policy_sha256": "801fed406e22ae34f9c122af812286f09f1ee1be621abb3a37067d4f021f8616",
+  "episodes": 37,
+  "selection_frozen_before_evaluation": true
+}

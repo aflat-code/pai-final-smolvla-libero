@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "seeded_candidate_sequence_verified": true,
+  "selection_by_reward_only_verified": true,
+  "frozen_policy_hash_verified": true,
+  "raw_contact_distance_verified": true,
+  "raw_actions_and_reward_components_verified": true,
+  "audited_physical_episodes": 43,
+  "source_sha256": "86d84316e215329987298778eba9d91952a9d3d2ea650dc083dbf524173883de"
+}

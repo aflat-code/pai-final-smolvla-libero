@@ -8,6 +8,10 @@ from launch_ros.actions import Node, SetParameter
 
 
 def generate_launch_description():
+    return create_launch()
+
+
+def create_launch(world_name="block_grasp.sdf", contacts=False):
     env = {
         "IGN_GAZEBO_SYSTEM_PLUGIN_PATH": os.environ["LD_LIBRARY_PATH"],
         "IGN_GAZEBO_RESOURCE_PATH": os.path.dirname(
@@ -16,7 +20,7 @@ def generate_launch_description():
         "LIBGL_ALWAYS_SOFTWARE": "1",
     }
     world = os.path.join(
-        get_package_share_directory("crane_act_demo"), "worlds", "block_grasp.sdf"
+        get_package_share_directory("crane_act_demo"), "worlds", world_name
     )
     gazebo = ExecuteProcess(
         cmd=["ign", "gazebo", "-r", "-s", world],
@@ -71,8 +75,7 @@ def generate_launch_description():
         arguments=["/world/default/dynamic_pose/info@tf2_msgs/msg/TFMessage[ignition.msgs.Pose_V"],
         output="screen",
     )
-    return LaunchDescription(
-        [
+    actions = [
             SetParameter(name="use_sim_time", value=True),
             gazebo,
             robot_state_publisher,
@@ -82,4 +85,9 @@ def generate_launch_description():
             image_bridge,
             pose_bridge,
         ]
-    )
+    if contacts:
+        actions.append(Node(package="ros_gz_bridge", executable="parameter_bridge",
+                            arguments=["/world/default/model/red_block/link/block_link/sensor/block_contact_sensor/contact@ros_gz_interfaces/msg/Contacts[ignition.msgs.Contacts"],
+                            remappings=[("/world/default/model/red_block/link/block_link/sensor/block_contact_sensor/contact", "/block_contacts")],
+                            output="screen"))
+    return LaunchDescription(actions)

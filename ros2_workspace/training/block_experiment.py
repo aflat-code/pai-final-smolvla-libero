@@ -43,11 +43,20 @@ def teacher(t, start):
 
 
 def block_pose():
-    result=subprocess.run(['ign','topic','-e','-n','1','-t','/world/default/pose/info'],
-                          capture_output=True,text=True,timeout=5,check=True)
-    match=re.search(r'name: "red_block".*?position\s*\{\s*x: ([^\s]+)\s*y: ([^\s]+)\s*z: ([^\s]+)',result.stdout,re.S)
-    if not match: raise RuntimeError('Block pose unavailable')
-    return [float(v) for v in match.groups()]
+    # The external Ignition client can transiently abort under emulation.
+    # Retry reads only; never infer or synthesize an object's position.
+    last_error=None
+    for attempt in range(3):
+        try:
+            result=subprocess.run(['ign','topic','-e','-n','1','-t','/world/default/pose/info'],
+                                  capture_output=True,text=True,timeout=5,check=True)
+            match=re.search(r'name: "red_block".*?position\s*\{\s*x: ([^\s]+)\s*y: ([^\s]+)\s*z: ([^\s]+)',result.stdout,re.S)
+            if not match:raise RuntimeError('Block pose unavailable')
+            return [float(v) for v in match.groups()]
+        except (subprocess.SubprocessError,RuntimeError) as exc:
+            last_error=exc
+            if attempt<2:time.sleep(.2)
+    raise RuntimeError('Named block pose read failed after three attempts') from last_error
 
 
 class Robot(Node):

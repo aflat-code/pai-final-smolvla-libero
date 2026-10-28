@@ -1,0 +1,1406 @@
+[
+  {
+    "label": "search_g00_00",
+    "parameters": [
+      -0.31569212399122326,
+      0.026821297367726257
+    ],
+    "reward": 0.04995042264721852,
+    "reward_terms": {
+      "goal": 0.18558027774129435,
+      "goal_bonus": 0.0,
+      "slide_penalty": -0.0,
+      "effort_penalty": -0.13554423156829515,
+      "terminal_height_penalty": -8.562352578067589e-05
+    },
+    "goal_error_m": 0.09178235124467014,
+    "slide_m": 0.0,
+    "air_xy_m": 0.0,
+    "max_lift_m": -8.562352578067589e-07,
+    "goal_reached": false,
+    "lifted_3cm": false,
+    "final": [
+      0.13,
+      0.02,
+      1.0299991437647422
+    ],
+    "samples": 492,
+    "contact_sensor_messages": 31589,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 0,
+    "candidate": 0
+  },
+  {
+    "label": "search_g00_01",
+    "parameters": [
+      -0.16783100090687186,
+      0.033859352289058835
+    ],
+    "reward": -0.05343735159053206,
+    "reward_terms": {
+      "goal": 0.18558027774129435,
+      "goal_bonus": 0.0,
+      "slide_penalty": -0.0,
+      "effort_penalty": -0.23893200580604573,
+      "terminal_height_penalty": -8.562352578067589e-05
+    },
+    "goal_error_m": 0.09178235124467014,
+    "slide_m": 0.0,
+    "air_xy_m": 0.0,
+    "max_lift_m": -8.562352578067589e-07,
+    "goal_reached": false,
+    "lifted_3cm": false,
+    "final": [
+      0.13,
+      0.02,
+      1.0299991437647422
+    ],
+    "samples": 492,
+    "contact_sensor_messages": 48557,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 0,
+    "candidate": 1
+  },
+  {
+    "label": "search_g00_02",
+    "parameters": [
+      0.25867545883200493,
+      0.008369857902303974
+    ],
+    "reward": -0.3481435057933519,
+    "reward_terms": {
+      "goal": 19.716698662994304,
+      "goal_bonus": 8.0,
+      "slide_penalty": -27.811568343205494,
+      "effort_penalty": -0.2532627220074359,
+      "terminal_height_penalty": -1.1103574726334386e-05
+    },
+    "goal_error_m": 0.005067487364285689,
+    "slide_m": 0.09270522781068498,
+    "air_xy_m": 0.0,
+    "max_lift_m": 0.0003873205166162741,
+    "goal_reached": true,
+    "lifted_3cm": false,
+    "final": [
+      0.11236826991473678,
+      -0.06494591200540643,
+      1.0299998889642528
+    ],
+    "samples": 492,
+    "contact_sensor_messages": 65699,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 0,
+    "candidate": 2
+  },
+  {
+    "label": "search_g00_03",
+    "parameters": [
+      0.0804453345044468,
+      0.04948133862561857
+    ],
+    "reward": -0.36290802317583026,
+    "reward_terms": {
+      "goal": 0.18558027774129435,
+      "goal_bonus": 0.0,
+      "slide_penalty": -0.0,
+      "effort_penalty": -0.548402677391344,
+      "terminal_height_penalty": -8.562352578067589e-05
+    },
+    "goal_error_m": 0.09178235124467014,
+    "slide_m": 0.0,
+    "air_xy_m": 0.0,
+    "max_lift_m": -8.562352578067589e-07,
+    "goal_reached": false,
+    "lifted_3cm": false,
+    "final": [
+      0.13,
+      0.02,
+      1.0299991437647422
+    ],
+    "samples": 493,
+    "contact_sensor_messages": 82548,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 0,
+    "candidate": 3
+  },
+  {
+    "label": "search_g00_04",
+    "parameters": [
+      0.1840990876246954,
+      0.021589253435558765
+    ],
+    "reward": -0.0891526191697796,
+    "reward_terms": {
+      "goal": 0.18558027774129435,
+      "goal_bonus": 0.0,
+      "slide_penalty": -0.0,
+      "effort_penalty": -0.27464727338529327,
+      "terminal_height_penalty": -8.562352578067589e-05
+    },
+    "goal_error_m": 0.09178235124467014,
+    "slide_m": 0.0,
+    "air_xy_m": 0.0,
+    "max_lift_m": -8.562352578067589e-07,
+    "goal_reached": false,
+    "lifted_3cm": false,
+    "final": [
+      0.13,
+      0.02,
+      1.0299991437647422
+    ],
+    "samples": 492,
+    "contact_sensor_messages": 99525,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 0,
+    "candidate": 4
+  },
+  {
+    "label": "search_g00_05",
+    "parameters": [
+      -0.4257308043929559,
+      0.045583679706543936
+    ],
+    "reward": -0.16149744320853285,
+    "reward_terms": {
+      "goal": 0.18558027774129435,
+      "goal_bonus": 0.0,
+      "slide_penalty": -0.0,
+      "effort_penalty": -0.3469920974240465,
+      "terminal_height_penalty": -8.562352578067589e-05
+    },
+    "goal_error_m": 0.09178235124467014,
+    "slide_m": 0.0,
+    "air_xy_m": 0.0,
+    "max_lift_m": -8.562352578067589e-07,
+    "goal_reached": false,
+    "lifted_3cm": false,
+    "final": [
+      0.13,
+      0.02,
+      1.0299991437647422
+    ],
+    "samples": 492,
+    "contact_sensor_messages": 116381,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 0,
+    "candidate": 5
+  },
+  {
+    "label": "search_g00_06",
+    "parameters": [
+      0.48833134483185225,
+      0.014228369608966635
+    ],
+    "reward": 16.02448074684897,
+    "reward_terms": {
+      "goal": 17.538059286455226,
+      "goal_bonus": 8.0,
+      "slide_penalty": -9.074842532206624,
+      "effort_penalty": -0.4387285346924032,
+      "terminal_height_penalty": -7.472707230782305e-06
+    },
+    "goal_error_m": 0.015376803567124621,
+    "slide_m": 0.03024947510735541,
+    "air_xy_m": 0.10470591337860459,
+    "max_lift_m": 0.018012344940742775,
+    "goal_reached": true,
+    "lifted_3cm": false,
+    "final": [
+      0.10389709866424696,
+      -0.08306862953354284,
+      1.0299999252729277
+    ],
+    "samples": 492,
+    "contact_sensor_messages": 133271,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 0,
+    "candidate": 6
+  },
+  {
+    "label": "search_g00_07",
+    "parameters": [
+      0.36924017643608653,
+      0.031397845949121435
+    ],
+    "reward": -1.8038134251915823,
+    "reward_terms": {
+      "goal": 0.11627217604108579,
+      "goal_bonus": 0.0,
+      "slide_penalty": -1.4419467456003547,
+      "effort_penalty": -0.4781360049739597,
+      "terminal_height_penalty": -2.8506583538145946e-06
+    },
+    "goal_error_m": 0.09625796993658076,
+    "slide_m": 0.004806489152001182,
+    "air_xy_m": 0.0,
+    "max_lift_m": 7.349988013283237e-05,
+    "goal_reached": false,
+    "lifted_3cm": false,
+    "final": [
+      0.1317444191652117,
+      0.024211223790693345,
+      1.0299999714934165
+    ],
+    "samples": 492,
+    "contact_sensor_messages": 150011,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 0,
+    "candidate": 7
+  },
+  {
+    "label": "search_g00_08",
+    "parameters": [
+      -0.42829963620423706,
+      0.0008280534268353948
+    ],
+    "reward": 0.6720733006098905,
+    "reward_terms": {
+      "goal": 19.80627412990992,
+      "goal_bonus": 8.0,
+      "slide_penalty": -27.130710328795317,
+      "effort_penalty": -0.0034651187008311705,
+      "terminal_height_penalty": -2.538180388089728e-05
+    },
+    "goal_error_m": 0.00418572806567636,
+    "slide_m": 0.0904357010959844,
+    "air_xy_m": 0.0,
+    "max_lift_m": 0.00027874625038415424,
+    "goal_reached": true,
+    "lifted_3cm": false,
+    "final": [
+      0.1148768975088895,
+      -0.06695964144168223,
+      1.0299997461819612
+    ],
+    "samples": 492,
+    "contact_sensor_messages": 166149,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 0,
+    "candidate": 8
+  },
+  {
+    "label": "search_g00_09",
+    "parameters": [
+      0.0021155191842516796,
+      0.004750527120109516
+    ],
+    "reward": 0.4575978590741986,
+    "reward_terms": {
+      "goal": 19.74390929927828,
+      "goal_bonus": 8.0,
+      "slide_penalty": -27.17390128711886,
+      "effort_penalty": -0.11238953178193402,
+      "terminal_height_penalty": -2.06213032871716e-05
+    },
+    "goal_error_m": 0.0048163259256181765,
+    "slide_m": 0.09057967095706286,
+    "air_xy_m": 0.0,
+    "max_lift_m": 0.00034264164273545283,
+    "goal_reached": true,
+    "lifted_3cm": false,
+    "final": [
+      0.11328535844561707,
+      -0.06535835707016766,
+      1.0299997937869672
+    ],
+    "samples": 492,
+    "contact_sensor_messages": 182079,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 0,
+    "candidate": 9
+  },
+  {
+    "label": "search_g00_10",
+    "parameters": [
+      -0.13935874602781828,
+      0.038044161482728794
+    ],
+    "reward": -0.11148992919046483,
+    "reward_terms": {
+      "goal": 0.18558027774129435,
+      "goal_bonus": 0.0,
+      "slide_penalty": -0.0,
+      "effort_penalty": -0.2969845834059785,
+      "terminal_height_penalty": -8.562352578067589e-05
+    },
+    "goal_error_m": 0.09178235124467014,
+    "slide_m": 0.0,
+    "air_xy_m": 0.0,
+    "max_lift_m": -8.562352578067589e-07,
+    "goal_reached": false,
+    "lifted_3cm": false,
+    "final": [
+      0.13,
+      0.02,
+      1.0299991437647422
+    ],
+    "samples": 492,
+    "contact_sensor_messages": 197986,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 0,
+    "candidate": 10
+  },
+  {
+    "label": "search_g00_11",
+    "parameters": [
+      0.5631969207139154,
+      0.018694762613753118
+    ],
+    "reward": 16.126141431185744,
+    "reward_terms": {
+      "goal": 17.62954854431261,
+      "goal_bonus": 8.0,
+      "slide_penalty": -8.97795386480954,
+      "effort_penalty": -0.5254476220030209,
+      "terminal_height_penalty": -5.626314303341928e-06
+    },
+    "goal_error_m": 0.015069193491572985,
+    "slide_m": 0.02992651288269847,
+    "air_xy_m": 0.1108438144636083,
+    "max_lift_m": 0.019629274033022615,
+    "goal_reached": true,
+    "lifted_3cm": false,
+    "final": [
+      0.10498890115866265,
+      -0.08333885622995704,
+      1.029999943736857
+    ],
+    "samples": 491,
+    "contact_sensor_messages": 213925,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 0,
+    "candidate": 11
+  },
+  {
+    "label": "search_g01_00",
+    "parameters": [
+      -0.49188422830326406,
+      0.005075949311232512
+    ],
+    "reward": 0.5898991766117199,
+    "reward_terms": {
+      "goal": 19.719441074493723,
+      "goal_bonus": 8.0,
+      "slide_penalty": -27.12493879104166,
+      "effort_penalty": -0.004573810426336474,
+      "terminal_height_penalty": -2.9296414005841598e-05
+    },
+    "goal_error_m": 0.0050427256664679464,
+    "slide_m": 0.09041646263680554,
+    "air_xy_m": 0.0,
+    "max_lift_m": 0.0004298941284159863,
+    "goal_reached": true,
+    "lifted_3cm": false,
+    "final": [
+      0.1132936324610962,
+      -0.06512602860052988,
+      1.02999970703586
+    ],
+    "samples": 492,
+    "contact_sensor_messages": 229621,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 1,
+    "candidate": 0
+  },
+  {
+    "label": "search_g01_01",
+    "parameters": [
+      -0.1876550947468842,
+      0.010558255005751065
+    ],
+    "reward": -6.016780972008088,
+    "reward_terms": {
+      "goal": 16.18692932793114,
+      "goal_bonus": 8.0,
+      "slide_penalty": -30.14125307789218,
+      "effort_penalty": -0.06245219079378859,
+      "terminal_height_penalty": -5.031253258458435e-06
+    },
+    "goal_error_m": 0.01951283524912676,
+    "slide_m": 0.10047084359297394,
+    "air_xy_m": 0.0,
+    "max_lift_m": 0.0005136799920284485,
+    "goal_reached": true,
+    "lifted_3cm": false,
+    "final": [
+      0.12914920512590103,
+      -0.0793088937586232,
+      1.0299999496874674
+    ],
+    "samples": 492,
+    "contact_sensor_messages": 245376,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 1,
+    "candidate": 1
+  },
+  {
+    "label": "search_g01_02",
+    "parameters": [
+      0.5856682775168609,
+      0.018797838698029534
+    ],
+    "reward": 15.603136179102435,
+    "reward_terms": {
+      "goal": 18.221438449295192,
+      "goal_bonus": 8.0,
+      "slide_penalty": -10.072536141671845,
+      "effort_penalty": -0.5456920935919,
+      "terminal_height_penalty": -7.403492900959208e-05
+    },
+    "goal_error_m": 0.01294759377861203,
+    "slide_m": 0.033575120472239484,
+    "air_xy_m": 0.10422625653332643,
+    "max_lift_m": 0.013635279834012692,
+    "goal_reached": true,
+    "lifted_3cm": false,
+    "final": [
+      0.10686122873514946,
+      -0.08188415813356165,
+      1.02999925965071
+    ],
+    "samples": 491,
+    "contact_sensor_messages": 260521,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 1,
+    "candidate": 2
+  },
+  {
+    "label": "search_g01_03",
+    "parameters": [
+      0.12913268186074556,
+      0.04852366020923327
+    ],
+    "reward": -0.37164451972205015,
+    "reward_terms": {
+      "goal": 0.18558027774122532,
+      "goal_bonus": 0.0,
+      "slide_penalty": -0.0,
+      "effort_penalty": -0.5571391739374948,
+      "terminal_height_penalty": -8.562352578067589e-05
+    },
+    "goal_error_m": 0.0917823512446738,
+    "slide_m": 0.0,
+    "air_xy_m": 0.0,
+    "max_lift_m": -8.562352578067589e-07,
+    "goal_reached": false,
+    "lifted_3cm": false,
+    "final": [
+      0.13,
+      0.02000000000000374,
+      1.0299991437647422
+    ],
+    "samples": 492,
+    "contact_sensor_messages": 276108,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 1,
+    "candidate": 3
+  },
+  {
+    "label": "search_g01_04",
+    "parameters": [
+      0.23114847708025166,
+      0.03165234445991097
+    ],
+    "reward": -0.2050018162566455,
+    "reward_terms": {
+      "goal": 0.18558027774129435,
+      "goal_bonus": 0.0,
+      "slide_penalty": -0.0,
+      "effort_penalty": -0.3904964704721592,
+      "terminal_height_penalty": -8.562352578067589e-05
+    },
+    "goal_error_m": 0.09178235124467014,
+    "slide_m": 0.0,
+    "air_xy_m": 0.0,
+    "max_lift_m": -8.562352578067589e-07,
+    "goal_reached": false,
+    "lifted_3cm": false,
+    "final": [
+      0.13,
+      0.02,
+      1.0299991437647422
+    ],
+    "samples": 492,
+    "contact_sensor_messages": 291494,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 1,
+    "candidate": 4
+  },
+  {
+    "label": "search_g01_05",
+    "parameters": [
+      -0.06407120386878323,
+      0.036504971315731424
+    ],
+    "reward": -0.11762871693316304,
+    "reward_terms": {
+      "goal": 0.18558027774129435,
+      "goal_bonus": 0.0,
+      "slide_penalty": -0.0,
+      "effort_penalty": -0.3031233711486767,
+      "terminal_height_penalty": -8.562352578067589e-05
+    },
+    "goal_error_m": 0.09178235124467014,
+    "slide_m": 0.0,
+    "air_xy_m": 0.0,
+    "max_lift_m": -8.562352578067589e-07,
+    "goal_reached": false,
+    "lifted_3cm": false,
+    "final": [
+      0.13,
+      0.02,
+      1.0299991437647422
+    ],
+    "samples": 491,
+    "contact_sensor_messages": 306848,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 1,
+    "candidate": 5
+  },
+  {
+    "label": "search_g01_06",
+    "parameters": [
+      0.5284166229598118,
+      0.01409975047335555
+    ],
+    "reward": 13.200445274227086,
+    "reward_terms": {
+      "goal": 17.947373154220085,
+      "goal_bonus": 8.0,
+      "slide_penalty": -12.275933619685034,
+      "effort_penalty": -0.4709887468613554,
+      "terminal_height_penalty": -5.513446610372341e-06
+    },
+    "goal_error_m": 0.013961350976239304,
+    "slide_m": 0.040919778732283446,
+    "air_xy_m": 0.09159079958932904,
+    "max_lift_m": 0.008034345993983782,
+    "goal_reached": true,
+    "lifted_3cm": false,
+    "final": [
+      0.10500412598746664,
+      -0.08208209699855529,
+      1.029999944865534
+    ],
+    "samples": 491,
+    "contact_sensor_messages": 322213,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 1,
+    "candidate": 6
+  },
+  {
+    "label": "search_g01_07",
+    "parameters": [
+      -0.041104336366901195,
+      0.020454487216846
+    ],
+    "reward": 0.02492529253790987,
+    "reward_terms": {
+      "goal": 0.1855802777412245,
+      "goal_bonus": 0.0,
+      "slide_penalty": -0.0,
+      "effort_penalty": -0.16056936167753394,
+      "terminal_height_penalty": -8.562352578067589e-05
+    },
+    "goal_error_m": 0.09178235124467383,
+    "slide_m": 0.0,
+    "air_xy_m": 0.0,
+    "max_lift_m": -8.562352578067589e-07,
+    "goal_reached": false,
+    "lifted_3cm": false,
+    "final": [
+      0.13,
+      0.020000000000003775,
+      1.0299991437647422
+    ],
+    "samples": 492,
+    "contact_sensor_messages": 337911,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 1,
+    "candidate": 7
+  },
+  {
+    "label": "search_g01_08",
+    "parameters": [
+      -0.10379527419026643,
+      0.018881361665705688
+    ],
+    "reward": 0.057520570363440465,
+    "reward_terms": {
+      "goal": 0.18558027774129435,
+      "goal_bonus": 0.0,
+      "slide_penalty": -0.0,
+      "effort_penalty": -0.1279740838520732,
+      "terminal_height_penalty": -8.562352578067589e-05
+    },
+    "goal_error_m": 0.09178235124467014,
+    "slide_m": 0.0,
+    "air_xy_m": 0.0,
+    "max_lift_m": -8.562352578067589e-07,
+    "goal_reached": false,
+    "lifted_3cm": false,
+    "final": [
+      0.13,
+      0.02,
+      1.0299991437647422
+    ],
+    "samples": 492,
+    "contact_sensor_messages": 353499,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 1,
+    "candidate": 8
+  },
+  {
+    "label": "search_g01_09",
+    "parameters": [
+      0.02083137162141538,
+      0.009823443142141291
+    ],
+    "reward": -0.4013502144209895,
+    "reward_terms": {
+      "goal": 19.71464142014979,
+      "goal_bonus": 8.0,
+      "slide_penalty": -27.983331346972708,
+      "effort_penalty": -0.13253945464247366,
+      "terminal_height_penalty": -0.00012083295559683904
+    },
+    "goal_error_m": 0.0050859856679738155,
+    "slide_m": 0.09327777115657569,
+    "air_xy_m": 0.0,
+    "max_lift_m": 0.0006458584706370285,
+    "goal_reached": true,
+    "lifted_3cm": false,
+    "final": [
+      0.11460623048530234,
+      -0.0656325278624454,
+      1.029998791670444
+    ],
+    "samples": 491,
+    "contact_sensor_messages": 12591,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 1,
+    "candidate": 9
+  },
+  {
+    "label": "search_g01_10",
+    "parameters": [
+      0.3506800207100807,
+      0.0016137314493083425
+    ],
+    "reward": -3.1054941699394614,
+    "reward_terms": {
+      "goal": 18.37850517064406,
+      "goal_bonus": 8.0,
+      "slide_penalty": -29.033123379523285,
+      "effort_penalty": -0.30260027612019025,
+      "terminal_height_penalty": -0.14827568494004684
+    },
+    "goal_error_m": 0.012336566795899149,
+    "slide_m": 0.09677707793174428,
+    "air_xy_m": 0.0,
+    "max_lift_m": 0.005793212366573819,
+    "goal_reached": true,
+    "lifted_3cm": false,
+    "final": [
+      0.12178484934370984,
+      -0.062486837973889924,
+      1.0314827568494005
+    ],
+    "samples": 491,
+    "contact_sensor_messages": 26897,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 1,
+    "candidate": 10
+  },
+  {
+    "label": "search_g01_11",
+    "parameters": [
+      0.5631969207139154,
+      0.018694762613753118
+    ],
+    "reward": 15.915805172835945,
+    "reward_terms": {
+      "goal": 18.635168215592238,
+      "goal_bonus": 8.0,
+      "slide_penalty": -10.193908402333316,
+      "effort_penalty": -0.5254476220030209,
+      "terminal_height_penalty": -7.018419956317246e-06
+    },
+    "goal_error_m": 0.011279498430377908,
+    "slide_m": 0.03397969467444439,
+    "air_xy_m": 0.10016348847963834,
+    "max_lift_m": 0.012492109050610045,
+    "goal_reached": true,
+    "lifted_3cm": false,
+    "final": [
+      0.10822150662370647,
+      -0.08062779716809668,
+      1.0299999298158005
+    ],
+    "samples": 492,
+    "contact_sensor_messages": 41569,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 1,
+    "candidate": 11
+  },
+  {
+    "label": "search_g02_00",
+    "parameters": [
+      0.08219300484132686,
+      0.049911538336887815
+    ],
+    "reward": -0.37081336843540796,
+    "reward_terms": {
+      "goal": 0.1855802777412245,
+      "goal_bonus": 0.0,
+      "slide_penalty": -0.0,
+      "effort_penalty": -0.5563080226508518,
+      "terminal_height_penalty": -8.562352578067589e-05
+    },
+    "goal_error_m": 0.09178235124467383,
+    "slide_m": 0.0,
+    "air_xy_m": 0.0,
+    "max_lift_m": -8.562352578067589e-07,
+    "goal_reached": false,
+    "lifted_3cm": false,
+    "final": [
+      0.13,
+      0.020000000000003775,
+      1.0299991437647422
+    ],
+    "samples": 492,
+    "contact_sensor_messages": 56364,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 2,
+    "candidate": 0
+  },
+  {
+    "label": "search_g02_01",
+    "parameters": [
+      -0.3570621073514716,
+      0.0101071951254755
+    ],
+    "reward": -1.2387655379578866,
+    "reward_terms": {
+      "goal": 19.650896839272566,
+      "goal_bonus": 8.0,
+      "slide_penalty": -28.862179668179728,
+      "effort_penalty": -0.027467442188927417,
+      "terminal_height_penalty": -1.526686179698089e-05
+    },
+    "goal_error_m": 0.00562998508777749,
+    "slide_m": 0.0962072655605991,
+    "air_xy_m": 0.0,
+    "max_lift_m": 0.000978437683799127,
+    "goal_reached": true,
+    "lifted_3cm": false,
+    "final": [
+      0.11739460139486126,
+      -0.06838909718506736,
+      1.029999847331382
+    ],
+    "samples": 491,
+    "contact_sensor_messages": 70882,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 2,
+    "candidate": 1
+  },
+  {
+    "label": "search_g02_02",
+    "parameters": [
+      -0.20831180693462364,
+      0.007636921113913658
+    ],
+    "reward": 0.3701973179483905,
+    "reward_terms": {
+      "goal": 19.58396893695302,
+      "goal_bonus": 8.0,
+      "slide_penalty": -27.165356367077404,
+      "effort_penalty": -0.04836359838014194,
+      "terminal_height_penalty": -5.165354708402958e-05
+    },
+    "goal_error_m": 0.006151236954065838,
+    "slide_m": 0.09055118789025801,
+    "air_xy_m": 0.0,
+    "max_lift_m": 0.0004897705435331634,
+    "goal_reached": true,
+    "lifted_3cm": false,
+    "final": [
+      0.112158973857325,
+      -0.06385081766592075,
+      1.0299994834645292
+    ],
+    "samples": 492,
+    "contact_sensor_messages": 85701,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 2,
+    "candidate": 2
+  },
+  {
+    "label": "search_g02_03",
+    "parameters": [
+      -0.01639462287051152,
+      0.03430039028697391
+    ],
+    "reward": -0.11006243647765687,
+    "reward_terms": {
+      "goal": 0.18558027774129435,
+      "goal_bonus": 0.0,
+      "slide_penalty": -0.0,
+      "effort_penalty": -0.29555709069317054,
+      "terminal_height_penalty": -8.562352578067589e-05
+    },
+    "goal_error_m": 0.09178235124467014,
+    "slide_m": 0.0,
+    "air_xy_m": 0.0,
+    "max_lift_m": -8.562352578067589e-07,
+    "goal_reached": false,
+    "lifted_3cm": false,
+    "final": [
+      0.13,
+      0.02,
+      1.0299991437647422
+    ],
+    "samples": 492,
+    "contact_sensor_messages": 100407,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 2,
+    "candidate": 3
+  },
+  {
+    "label": "search_g02_04",
+    "parameters": [
+      0.282955372571577,
+      0.02606335699383205
+    ],
+    "reward": -0.18377642863208962,
+    "reward_terms": {
+      "goal": 0.18558027774129435,
+      "goal_bonus": 0.0,
+      "slide_penalty": -0.0,
+      "effort_penalty": -0.3692710828476033,
+      "terminal_height_penalty": -8.562352578067589e-05
+    },
+    "goal_error_m": 0.09178235124467014,
+    "slide_m": 0.0,
+    "air_xy_m": 0.0,
+    "max_lift_m": -8.562352578067589e-07,
+    "goal_reached": false,
+    "lifted_3cm": false,
+    "final": [
+      0.13,
+      0.02,
+      1.0299991437647422
+    ],
+    "samples": 491,
+    "contact_sensor_messages": 114252,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 2,
+    "candidate": 4
+  },
+  {
+    "label": "search_g02_05",
+    "parameters": [
+      0.42545121940084796,
+      0.017780038803104914
+    ],
+    "reward": 17.237084489060937,
+    "reward_terms": {
+      "goal": 19.866944141986806,
+      "goal_bonus": 8.0,
+      "slide_penalty": -10.221307704634567,
+      "effort_penalty": -0.40854989390568414,
+      "terminal_height_penalty": -2.0543856171784114e-06
+    },
+    "goal_error_m": 0.003466271551053623,
+    "slide_m": 0.03407102568211522,
+    "air_xy_m": 0.07427180777071113,
+    "max_lift_m": 0.009329598525037675,
+    "goal_reached": true,
+    "lifted_3cm": false,
+    "final": [
+      0.10853593936981773,
+      -0.07012378374717582,
+      1.0299999794561439
+    ],
+    "samples": 490,
+    "contact_sensor_messages": 126287,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 2,
+    "candidate": 5
+  },
+  {
+    "label": "search_g02_06",
+    "parameters": [
+      0.49854876849950747,
+      0.015454620062419499
+    ],
+    "reward": 15.910219416599535,
+    "reward_terms": {
+      "goal": 19.4917348924936,
+      "goal_bonus": 8.0,
+      "slide_penalty": -11.128514317045326,
+      "effort_penalty": -0.45299960234001635,
+      "terminal_height_penalty": -1.556508721911598e-06
+    },
+    "goal_error_m": 0.006806992662198646,
+    "slide_m": 0.03709504772348442,
+    "air_xy_m": 0.07847955361727048,
+    "max_lift_m": 0.009220180027966318,
+    "goal_reached": true,
+    "lifted_3cm": false,
+    "final": [
+      0.10667583916464246,
+      -0.07424128052626458,
+      1.0299999844349128
+    ],
+    "samples": 491,
+    "contact_sensor_messages": 138213,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 2,
+    "candidate": 6
+  },
+  {
+    "label": "search_g02_07",
+    "parameters": [
+      0.5169674621216443,
+      0.014868520518868495
+    ],
+    "reward": 14.803672446619498,
+    "reward_terms": {
+      "goal": 18.847073379060348,
+      "goal_bonus": 8.0,
+      "slide_penalty": -11.578244556297726,
+      "effort_penalty": -0.4651528687423773,
+      "terminal_height_penalty": -3.5074007476154634e-06
+    },
+    "goal_error_m": 0.010338004363239792,
+    "slide_m": 0.03859414852099242,
+    "air_xy_m": 0.08538287061977301,
+    "max_lift_m": 0.008618265794579916,
+    "goal_reached": true,
+    "lifted_3cm": false,
+    "final": [
+      0.10594770864833328,
+      -0.07838117555053617,
+      1.0299999649259926
+    ],
+    "samples": 492,
+    "contact_sensor_messages": 151765,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 2,
+    "candidate": 7
+  },
+  {
+    "label": "search_g02_08",
+    "parameters": [
+      0.523453607170416,
+      0.017692133092694066
+    ],
+    "reward": 17.34265659029105,
+    "reward_terms": {
+      "goal": 19.003166725561698,
+      "goal_bonus": 8.0,
+      "slide_penalty": -9.174780612320038,
+      "effort_penalty": -0.48572797562083736,
+      "terminal_height_penalty": -1.5473297754198256e-06
+    },
+    "goal_error_m": 0.009593119894810749,
+    "slide_m": 0.030582602041066796,
+    "air_xy_m": 0.10179097788932177,
+    "max_lift_m": 0.014242104499003538,
+    "goal_reached": true,
+    "lifted_3cm": false,
+    "final": [
+      0.10820428451488931,
+      -0.07881024933088189,
+      1.0299999845267023
+    ],
+    "samples": 491,
+    "contact_sensor_messages": 166206,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 2,
+    "candidate": 8
+  },
+  {
+    "label": "search_g02_09",
+    "parameters": [
+      0.5051189066148507,
+      0.01727291149190139
+    ],
+    "reward": 14.887632123936525,
+    "reward_terms": {
+      "goal": 18.26817668131278,
+      "goal_bonus": 8.0,
+      "slide_penalty": -10.912350261467832,
+      "effort_penalty": -0.4681876992257569,
+      "terminal_height_penalty": -6.596682666781817e-06
+    },
+    "goal_error_m": 0.012768283830209348,
+    "slide_m": 0.03637450087155944,
+    "air_xy_m": 0.09732304283670953,
+    "max_lift_m": 0.011453132516226594,
+    "goal_reached": true,
+    "lifted_3cm": false,
+    "final": [
+      0.10681694231512293,
+      -0.08166897531936812,
+      1.0299999340331734
+    ],
+    "samples": 491,
+    "contact_sensor_messages": 181238,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 2,
+    "candidate": 9
+  },
+  {
+    "label": "search_g02_10",
+    "parameters": [
+      0.5763746807307093,
+      0.013120675826018734
+    ],
+    "reward": 13.537990119070177,
+    "reward_terms": {
+      "goal": 18.456531872506357,
+      "goal_bonus": 8.0,
+      "slide_penalty": -12.410945720632034,
+      "effort_penalty": -0.507583342299278,
+      "terminal_height_penalty": -1.2690504869183883e-05
+    },
+    "goal_error_m": 0.012023522048247597,
+    "slide_m": 0.04136981906877345,
+    "air_xy_m": 0.08639649834009137,
+    "max_lift_m": 0.0076144525364560955,
+    "goal_reached": true,
+    "lifted_3cm": false,
+    "final": [
+      0.10646265385445826,
+      -0.0806725292273739,
+      1.0299998730949513
+    ],
+    "samples": 491,
+    "contact_sensor_messages": 196303,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 2,
+    "candidate": 10
+  },
+  {
+    "label": "search_g02_11",
+    "parameters": [
+      0.5631969207139154,
+      0.018694762613753118
+    ],
+    "reward": 16.114037259213895,
+    "reward_terms": {
+      "goal": 17.82416482029312,
+      "goal_bonus": 8.0,
+      "slide_penalty": -9.184678103583755,
+      "effort_penalty": -0.5254476220030209,
+      "terminal_height_penalty": -1.83549244692216e-06
+    },
+    "goal_error_m": 0.014398572601307183,
+    "slide_m": 0.030615593678612513,
+    "air_xy_m": 0.10713732129817816,
+    "max_lift_m": 0.021415217127349617,
+    "goal_reached": true,
+    "lifted_3cm": false,
+    "final": [
+      0.10506329389506934,
+      -0.08261748791831923,
+      1.0299999816450756
+    ],
+    "samples": 491,
+    "contact_sensor_messages": 211195,
+    "duration_wall_s": 25.0,
+    "initial": [
+      0.13,
+      0.02
+    ],
+    "goal": [
+      0.112,
+      -0.07
+    ],
+    "generation": 2,
+    "candidate": 11
+  }
+]

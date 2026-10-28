@@ -1,0 +1,9 @@
+{
+  "python": "3.10.12 (main, Jan 17 2025, 14:35:34) [GCC 11.4.0]",
+  "numpy": "1.24.4",
+  "machine": "x86_64",
+  "platform": "Linux-7.0.12-linuxkit-x86_64-with-glibc2.35",
+  "ros": "Humble",
+  "gazebo": "Ignition 6.16.0",
+  "policy_backend": "NumPy CEM; no PyTorch"
+}

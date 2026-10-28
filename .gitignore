@@ -20,6 +20,8 @@ ros2_workspace/ablation_vae/
 ros2_workspace/grasp_results/
 ros2_workspace/strategy_results/
 ros2_workspace/strategy_models/
+ros2_workspace/reward_results/
+ros2_workspace/reward_pilot_workspace_check/
 !experiments/submission2/models/before/model.safetensors
 !experiments/submission2/models/after/model.safetensors
 ros2_workspace/video/

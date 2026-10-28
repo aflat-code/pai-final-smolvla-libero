@@ -1,0 +1,111 @@
+[INFO] [launch]: All log files can be found below /home/ubuntu/.ros/log/2026-10-28-15-55-35-565164-b09793b85d50-3347
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [ign-1]: process started with pid [3349]
+[INFO] [robot_state_publisher-2]: process started with pid [3351]
+[INFO] [create-3]: process started with pid [3353]
+[INFO] [parameter_bridge-4]: process started with pid [3355]
+[INFO] [image_bridge-5]: process started with pid [3357]
+[INFO] [parameter_bridge-6]: process started with pid [3359]
+[INFO] [parameter_bridge-7]: process started with pid [3361]
+[robot_state_publisher-2] [INFO] [1793202936.097454261] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-2] [INFO] [1793202936.099064470] [robot_state_publisher]: got segment crane_plus_base
+[robot_state_publisher-2] [INFO] [1793202936.099088511] [robot_state_publisher]: got segment crane_plus_link1
+[robot_state_publisher-2] [INFO] [1793202936.099094595] [robot_state_publisher]: got segment crane_plus_link2
+[robot_state_publisher-2] [INFO] [1793202936.099099095] [robot_state_publisher]: got segment crane_plus_link3
+[robot_state_publisher-2] [INFO] [1793202936.099102845] [robot_state_publisher]: got segment crane_plus_link4
+[robot_state_publisher-2] [INFO] [1793202936.099106386] [robot_state_publisher]: got segment crane_plus_link_endtip
+[robot_state_publisher-2] [INFO] [1793202936.099111261] [robot_state_publisher]: got segment crane_plus_link_hand
+[robot_state_publisher-2] [INFO] [1793202936.099114886] [robot_state_publisher]: got segment world
+[create-3] [INFO] [1793202936.108040345] [ros_gz_sim]: Requesting list of world names.
+[parameter_bridge-7] [INFO] [1793202936.132776428] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/block_contacts (ignition.msgs.Contacts) -> /block_contacts (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1793202936.138615970] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (ignition.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-6] [INFO] [1793202936.140407595] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/default/dynamic_pose/info (ignition.msgs.Pose_V) -> /world/default/dynamic_pose/info (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[create-3] [INFO] [1793202936.531432928] [ros_gz_sim]: Waiting messages on topic [/robot_description].
+[create-3] [INFO] [1793202936.550909012] [ros_gz_sim]: Requested creation of entity.
+[create-3] [INFO] [1793202936.551160637] [ros_gz_sim]: OK creation of entity.
+[INFO] [create-3]: process has finished cleanly [pid 3353]
+[ign-1] [INFO] [1793202938.289339804] [GazeboSimROS2ControlPlugin]: robot_param_node is robot_state_publisher
+[ign-1] [INFO] [1793202938.290150096] [GazeboSimROS2ControlPlugin]: robot_param_node is robot_description
+[ign-1] [INFO] [1793202938.400674971] [gz_ros2_control]: [ign_ros2_control] Fixed joint [base_link_to_world_joint] (Entity=40)] is skipped
+[INFO] [ros2-8]: process started with pid [3503]
+[INFO] [ros2-9]: process started with pid [3505]
+[INFO] [ros2-10]: process started with pid [3507]
+[ign-1] [ERROR] [1793202938.910213638] [gz_ros2_control]: robot_state_publisher service not available, waiting again...
+[ign-1] [ERROR] [1793202939.410480721] [gz_ros2_control]: robot_state_publisher service not available, waiting again...
+[ign-1] [INFO] [1793202939.509379846] [gz_ros2_control]: connected to service!! robot_state_publisher asking for robot_description
+[ign-1] [INFO] [1793202939.515109305] [gz_ros2_control]: Received URDF from param server
+[ign-1] [INFO] [1793202939.558916055] [gz_ros2_control]: The position_proportional_gain has been set to: 0.1
+[ign-1] [INFO] [1793202939.559853638] [gz_ros2_control]: Loading joint: crane_plus_joint1
+[ign-1] [INFO] [1793202939.560204596] [gz_ros2_control]: 	State:
+[ign-1] [INFO] [1793202939.560249930] [gz_ros2_control]: 		 position
+[ign-1] [INFO] [1793202939.560434013] [gz_ros2_control]: 		 velocity
+[ign-1] [INFO] [1793202939.560511638] [gz_ros2_control]: 		 effort
+[ign-1] [INFO] [1793202939.560611263] [gz_ros2_control]: 	Command:
+[ign-1] [INFO] [1793202939.560823263] [gz_ros2_control]: 		 position
+[ign-1] [INFO] [1793202939.561258471] [gz_ros2_control]: Loading joint: crane_plus_joint2
+[ign-1] [INFO] [1793202939.561270888] [gz_ros2_control]: 	State:
+[ign-1] [INFO] [1793202939.561281221] [gz_ros2_control]: 		 position
+[ign-1] [INFO] [1793202939.561351096] [gz_ros2_control]: 		 velocity
+[ign-1] [INFO] [1793202939.561360263] [gz_ros2_control]: 		 effort
+[ign-1] [INFO] [1793202939.561368346] [gz_ros2_control]: 	Command:
+[ign-1] [INFO] [1793202939.561376055] [gz_ros2_control]: 		 position
+[ign-1] [INFO] [1793202939.561403221] [gz_ros2_control]: Loading joint: crane_plus_joint3
+[ign-1] [INFO] [1793202939.561413180] [gz_ros2_control]: 	State:
+[ign-1] [INFO] [1793202939.561420888] [gz_ros2_control]: 		 position
+[ign-1] [INFO] [1793202939.561428721] [gz_ros2_control]: 		 velocity
+[ign-1] [INFO] [1793202939.561436763] [gz_ros2_control]: 		 effort
+[ign-1] [INFO] [1793202939.561464513] [gz_ros2_control]: 	Command:
+[ign-1] [INFO] [1793202939.561472930] [gz_ros2_control]: 		 position
+[ign-1] [INFO] [1793202939.561486763] [gz_ros2_control]: Loading joint: crane_plus_joint4
+[ign-1] [INFO] [1793202939.561495555] [gz_ros2_control]: 	State:
+[ign-1] [INFO] [1793202939.561503805] [gz_ros2_control]: 		 position
+[ign-1] [INFO] [1793202939.561511430] [gz_ros2_control]: 		 velocity
+[ign-1] [INFO] [1793202939.561519138] [gz_ros2_control]: 		 effort
+[ign-1] [INFO] [1793202939.561526721] [gz_ros2_control]: 	Command:
+[ign-1] [INFO] [1793202939.561534263] [gz_ros2_control]: 		 position
+[ign-1] [INFO] [1793202939.561589638] [gz_ros2_control]: Loading joint: crane_plus_joint_hand
+[ign-1] [INFO] [1793202939.561599805] [gz_ros2_control]: 	State:
+[ign-1] [INFO] [1793202939.561607263] [gz_ros2_control]: 		 position
+[ign-1] [INFO] [1793202939.561615221] [gz_ros2_control]: 		 velocity
+[ign-1] [INFO] [1793202939.561623221] [gz_ros2_control]: 		 effort
+[ign-1] [INFO] [1793202939.561631096] [gz_ros2_control]: 	Command:
+[ign-1] [INFO] [1793202939.561638180] [gz_ros2_control]: 		 position
+[ign-1] [INFO] [1793202939.563602305] [resource_manager]: Initialize hardware 'crane_plus' 
+[ign-1] [WARN] [1793202939.563829721] [gz_ros2_control]: On init...
+[ign-1] [INFO] [1793202939.564414888] [resource_manager]: Successful initialization of hardware 'crane_plus'
+[ign-1] [INFO] [1793202939.565387305] [resource_manager]: 'configure' hardware 'crane_plus' 
+[ign-1] [INFO] [1793202939.565443805] [gz_ros2_control]: System Successfully configured!
+[ign-1] [INFO] [1793202939.565463055] [resource_manager]: Successful 'configure' of hardware 'crane_plus'
+[ign-1] [INFO] [1793202939.565521055] [resource_manager]: 'activate' hardware 'crane_plus' 
+[ign-1] [INFO] [1793202939.565547721] [resource_manager]: Successful 'activate' of hardware 'crane_plus'
+[ign-1] [INFO] [1793202939.565570763] [gz_ros2_control]: Loading controller_manager
+[ros2-8] [INFO] [1793202939.620220846] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+[ign-1] [INFO] [1793202939.623405596] [controller_manager]: Loading controller 'crane_plus_arm_controller'
+[ign-1] [WARN] [1793202939.660126763] [crane_plus_arm_controller]: [Deprecated]: "allow_nonzero_velocity_at_trajectory_end" is set to true. The default behavior will change to false.
+[ign-1] [INFO] [1793202939.665674555] [controller_manager]: Loading controller 'crane_plus_gripper_controller'
+[ros2-9] [INFO] [1793202939.670479721] [spawner_crane_plus_arm_controller]: [94mLoaded [1mcrane_plus_arm_controller[0m
+[ign-1] [WARN] [1793202939.671919096] [crane_plus_gripper_controller]: [Deprecated]: "allow_nonzero_velocity_at_trajectory_end" is set to true. The default behavior will change to false.
+[ign-1] [INFO] [1793202939.673227930] [controller_manager]: Configuring controller 'crane_plus_arm_controller'
+[ign-1] [INFO] [1793202939.674587721] [crane_plus_arm_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[ign-1] [INFO] [1793202939.675021471] [crane_plus_arm_controller]: Command interfaces are [position] and state interfaces are [position].
+[ign-1] [INFO] [1793202939.675368596] [crane_plus_arm_controller]: Using 'splines' interpolation method.
+[ros2-10] [INFO] [1793202939.682276638] [spawner_crane_plus_gripper_controller]: [94mLoaded [1mcrane_plus_gripper_controller[0m
+[ign-1] [INFO] [1793202939.683390805] [crane_plus_arm_controller]: Controller state will be published at 50.00 Hz.
+[ign-1] [INFO] [1793202939.694834180] [crane_plus_arm_controller]: Action status changes will be monitored at 20.00 Hz.
+[ign-1] [INFO] [1793202939.703886596] [controller_manager]: Configuring controller 'crane_plus_gripper_controller'
+[ign-1] [INFO] [1793202939.703972305] [crane_plus_gripper_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[ign-1] [INFO] [1793202939.703988763] [crane_plus_gripper_controller]: Command interfaces are [position] and state interfaces are [position].
+[ign-1] [INFO] [1793202939.703997388] [crane_plus_gripper_controller]: Using 'splines' interpolation method.
+[ign-1] [INFO] [1793202939.704244513] [crane_plus_gripper_controller]: Controller state will be published at 50.00 Hz.
+[ign-1] [INFO] [1793202939.704612596] [crane_plus_gripper_controller]: Action status changes will be monitored at 20.00 Hz.
+[ign-1] [WARN] [1793202939.762548555] [gz_ros2_control]:  Desired controller update period (0.01 s) is slower than the gazebo simulation period (0.001 s).
+[ros2-9] [INFO] [1793202941.338698347] [spawner_crane_plus_arm_controller]: [92mConfigured and activated [1mcrane_plus_arm_controller[0m
+[ros2-10] [INFO] [1793202941.350855208] [spawner_crane_plus_gripper_controller]: [92mConfigured and activated [1mcrane_plus_gripper_controller[0m
+[INFO] [ros2-9]: process has finished cleanly [pid 3505]
+[INFO] [ros2-10]: process has finished cleanly [pid 3507]
+[ign-1] [INFO] [1793202942.132627542] [controller_manager]: Loading controller 'joint_state_broadcaster'
+[ros2-8] [INFO] [1793202942.210645250] [spawner_joint_state_broadcaster]: [94mLoaded [1mjoint_state_broadcaster[0m
+[ign-1] [INFO] [1793202942.211773458] [controller_manager]: Configuring controller 'joint_state_broadcaster'
+[ign-1] [INFO] [1793202942.211954625] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[ros2-8] [INFO] [1793202942.241557958] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mjoint_state_broadcaster[0m
+[INFO] [ros2-8]: process has finished cleanly [pid 3503]

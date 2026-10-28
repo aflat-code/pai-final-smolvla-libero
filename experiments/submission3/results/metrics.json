@@ -1,0 +1,22 @@
+{
+  "before": {
+    "trials": 3,
+    "goal_reached": 3,
+    "lifted_3cm": 0,
+    "mean_return": 0.8318005566947422,
+    "mean_slide_mm": 89.73182367702466,
+    "mean_air_xy_mm": 0.0,
+    "mean_max_lift_mm": 0.462293381319349,
+    "mean_goal_error_mm": 4.74198545101209
+  },
+  "after": {
+    "trials": 3,
+    "goal_reached": 3,
+    "lifted_3cm": 0,
+    "mean_return": 16.62136812900764,
+    "mean_slide_mm": 32.925681277838244,
+    "mean_air_xy_mm": 96.4500380251957,
+    "mean_max_lift_mm": 12.681478180460578,
+    "mean_goal_error_mm": 9.45169270987735
+  }
+}
